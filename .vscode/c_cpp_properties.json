@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Users/bugur/petsc/include",
+                "/Users/bugur/petsc/arch-darwin-c-debug/include"
+            ],
+            
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "/Users/bugur/petsc/include",
+                    "/Users/bugur/petsc/arch-darwin-c-debug/include"
+                ],
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

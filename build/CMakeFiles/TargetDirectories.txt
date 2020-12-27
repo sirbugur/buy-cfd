@@ -1,0 +1,3 @@
+/Users/bugur/Desktop/ACFD/buy-cfd/build/CMakeFiles/rebuild_cache.dir
+/Users/bugur/Desktop/ACFD/buy-cfd/build/CMakeFiles/edit_cache.dir
+/Users/bugur/Desktop/ACFD/buy-cfd/build/CMakeFiles/mac.dir

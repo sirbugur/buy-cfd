@@ -1,0 +1,1 @@
+/Users/bugur/petsc/arch-darwin-c-debug/bin/mpicxx -std=c++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/mac.dir/hw1.cpp.o -o mac  -Wl,-rpath,/usr/local/lib /usr/local/lib/libmatplot.dylib -lPETSc 

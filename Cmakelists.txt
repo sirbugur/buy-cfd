@@ -1,0 +1,32 @@
+cmake_minimum_required(VERSION 3.8)
+project(MAC)
+
+set (PARENT_DIR /Users/bugur/Desktop/ACFD/buy-cfd/)
+message("/../cmake-modules")
+list (APPEND CMAKE_MODULE_PATH "${PARENT_DIR}/cmake-modules")
+set(CMAKE_CXX_FLAGS "-std=c++17")
+find_package(Matplot++ REQUIRED)
+find_package (PETSc REQUIRED)
+
+message (STATUS "PETSC COMPILER ${PETSC_COMPILER}")
+
+message (STATUS "CPP COMPILER ${PETSC_COMPILER}")
+
+include_directories (${PETSC_INCLUDES})
+add_definitions (${PETSC_DEFINITIONS})
+add_definitions (-g)
+message (STATUS "PETSC_DEFINITIONS ${PETSC_DEFINITIONS}")
+
+set (BEAM_DEPENDENT_LIBRARIES "${PETSC_LIBRARIES}")
+
+# add_subdirectory (include)
+# add_subdirectory (src)
+
+set(SOURCE_FILES hw1.cpp)
+add_executable(mac hw1.cpp)
+target_link_libraries(mac PUBLIC Matplot++::matplot)
+target_link_libraries(mac PUBLIC PETSc)
+
+# export CMAKE_PREFIX_PATH=/Users/bugur/petsc/arch-darwin-c-debug/lib/pkgconfig/PETSc.pc
+# export CC=$PETSC_DIR/$PETSC_ARCH/bin/mpicc
+# export CXX=$PETSC_DIR/$PETSC_ARCH/bin/mpicxx
